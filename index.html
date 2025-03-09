@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Sharjeel Jafri - Resume</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/sf-pro-display'); /* SF Pro font for iOS feel */
+        body {
+            font-family: -apple-system, 'SF Pro Display', BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #1e1e1e; /* Deep dark background */
+            color: #ffffff; /* Primary text */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased; /* Apple text rendering */
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 600px;
+            margin: 120px auto 40px; /* Adjusted for header height + space */
+            padding: 0 20px;
+            overflow-x: hidden;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #2c2c2e; /* Dark gray header */
+            color: #ffffff;
+            padding: 12px 20px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+            z-index: 1000;
+            transition: background-color 0.3s ease; /* Smooth transition for scroll effect */
+        }
+        .header.scrolled {
+            background-color: #1c1c1e; /* Darker on scroll */
+        }
+        h1 {
+            font-size: 1.8em;
+            margin: 0;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .contact {
+            font-size: 0.9em;
+            margin-top: 5px;
+            color: #a1a1a6; /* Secondary text */
+            font-weight: 400;
+        }
+        .contact a {
+            color: #0a84ff; /* iOS link blue */
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .contact a:hover {
+            color: #0066cc; /* Darker blue on hover */
+            text-decoration: underline;
+        }
+        .card {
+            background-color: #2a2a2a; /* Lighter dark for cards */
+            border-radius: 16px; /* iOS standard corner radius */
+            padding: 25px; /* Increased padding for space */
+            margin-bottom: 30px; /* Increased space between cards */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+            border: 1px solid #3a3a3c; /* Thin border */
+            backdrop-filter: blur(8px); /* Glass effect */
+            -webkit-backdrop-filter: blur(8px); /* Safari support */
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px); /* Lift effect */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            font-size: 1.3em;
+            color: #ffffff;
+            margin: 0 0 12px 0;
+            font-weight: 600;
+            border-bottom: 1px solid #3a3a3c;
+            padding-bottom: 6px;
+            letter-spacing: 0.5px; /* iOS text refinement */
+        }
+        .section-content ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .section-content li {
+            margin-bottom: 12px;
+            padding-left: 12px;
+            position: relative;
+            font-size: 16px; /* Minimum readable size */
+        }
+        .section-content li:before {
+            content: "•";
+            color: #a1a1a6;
+            position: absolute;
+            left: -12px;
+            font-size: 1.2em;
+            top: 2px;
+        }
+        .highlight-metric {
+            color: #5ac8fa; /* Muted teal for metrics */
+            font-weight: 600; /* Bold for emphasis */
+        }
+        .highlight-amber {
+            color: #ffd60a; /* Warm amber for roles/projects */
+        }
+        .highlight-date {
+            color: #a1a1a6; /* Muted gray for dates */
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 0 15px;
+                margin-top: 100px; /* Adjusted for smaller screens */
+            }
+            .header {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .card {
+                padding: 20px; /* Slightly less padding on mobile */
+                margin-bottom: 25px;
+            }
+        }
+        /* JavaScript for scroll effect */
+        <script>
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        </script>
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Syed Sharjeel Jafri</h1>
+        <div class="contact">
+            sharjeelswork@gmail.com | +1 (519) 616-9345 | Waterloo, ON | 
+            <a href="https://www.linkedin.com/in/sharjeel-jafri-904475149/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/sharjeeljafri" target="_blank">GitHub</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>EDUCATION</h2>
+            <div class="section-content">
+                <p><strong>University of Waterloo - BA, Financial Economics - Waterloo, ON</strong></p>
+                <p><span class="highlight-date">September 2019 - April 2024</span></p>
+                <ul>
+                    <li>Certifications: Canadian Security Course (CSC, In Progress)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>EXPERIENCE</h2>
+            <div class="section-content">
+                <p><strong><span class="highlight-amber">Tax Intern</span> - Ali Showki Ali Al Moslem Office, KSA</strong></p>
+                <p><span class="highlight-date">February 2022 - June 2022</span></p>
+                <ul>
+                    <li>Analyzed financial data for VAT returns, reducing discrepancies by <span class="highlight-metric">15%</span> through reconciliation of sales and purchase transactions.</li>
+                    <li>Prepared expense reports for ZATCA tax audits, ensuring <span class="highlight-metric">100%</span> compliance during reviews.</li>
+                    <li>Supported income tax and VAT filings, streamlining submission processes for a team of 5 accountants.</li>
+                </ul>
+
+                <p><strong><span class="highlight-amber">Research Analyst</span> - Economics Society, Waterloo, ON</strong></p>
+                <p><span class="highlight-date">October 2021 - December 2021</span></p>
+                <ul>
+                    <li>Conducted empirical research on market trends using R, identifying key economic correlations for 3 published articles.</li>
+                    <li>Visualized data with Matplotlib, enhancing insights for policymakers and academics with actionable trends.</li>
+                    <li>Boosted readership by <span class="highlight-metric">30%</span> through targeted outreach to industry professionals.</li>
+                </ul>
+
+                <p><strong><span class="highlight-amber">Tax Intern</span> - Z.H Jafri & Co, Karachi, Pakistan</strong></p>
+                <p><span class="highlight-date">May 2020 - August 2020</span></p>
+                <ul>
+                    <li>Filed income and sales tax returns, improving client compliance rates by <span class="highlight-metric">25%</span> through proactive tax research.</li>
+                    <li>Resolved <span class="highlight-metric">10+</span> tax inquiries from government agencies, maintaining strong client relationships.</li>
+                </ul>
+
+                <p><strong><span class="highlight-amber">Events Organizer</span> - FinTech Club, Waterloo, ON</strong></p>
+                <p><span class="highlight-date">January 2020 - April 2020</span></p>
+                <ul>
+                    <li>Planned 3 high-impact events, increasing attendance by <span class="highlight-metric">40%</span> through tailored invitations to 50+ professors and alumni.</li>
+                    <li>Managed budgets under <span class="highlight-metric">$2,000</span>, delivering events on time and within scope.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>PROJECTS</h2>
+            <div class="section-content">
+                <p><strong><span class="highlight-amber">Credit Risk Modeling</span></strong></p>
+                <ul>
+                    <li>Built a logistic regression model in Python (using NumPy, pandas, scikit-learn) to predict loan defaults, achieving <span class="highlight-metric">85%</span> accuracy.</li>
+                    <li>Enhanced model performance with XGBoost, presented on GitHub with visualizations via Matplotlib.</li>
+                </ul>
+
+                <p><strong><span class="highlight-amber">Financial Trading</span></strong></p>
+                <ul>
+                    <li>Developed a trend-following strategy using EMA crossovers and RSI signals, backtested with <span class="highlight-metric">12%</span> annualized returns.</li>
+                    <li>Analyzed risk metrics (Sharpe Ratio: <span class="highlight-metric">1.2</span>, Sortino Ratio: <span class="highlight-metric">1.5</span>) and documented findings in a public blog post.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>SKILLS</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Technical: Python, R, SQL, PowerBi, Microsoft Excel (Advanced), Azure</li>
+                    <li>Soft: Data Analysis, Tax Compliance, Project Management, Communication</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>CERTIFICATIONS</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Canadian Security Course (CSC, In Progress)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
